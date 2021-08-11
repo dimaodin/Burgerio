@@ -1,0 +1,109 @@
+.CustomSelect {
+    margin-bottom: 1.5rem;
+    width: 50%;
+    position: relative;
+    border-radius: 25px;
+}
+
+.CustomSelect-label {
+    color: var(--main-color);
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+.CustomSelect-display {
+    cursor: pointer;
+    display: flex;
+    text-transform: capitalize;
+    border-radius: 25px;
+    background-color: var(--main-color);
+    border-left: 3px solid var(--main-color-fade);
+    box-shadow: 0px 3px 5px var(--main-color-fade-more);
+    transition: 300ms ease;
+}
+
+.CustomSelect-display p {
+    margin: .35rem;
+    z-index: 100;
+}
+
+.CustomSelect-optionList.open .CustomSelect-display {
+    border-left: 3px solid var(--main-color);
+}
+
+.CustomSelect-arrowContainer {
+    height: 100%;
+    padding: .35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--secondary-color);
+    right: 0;
+    z-index: 100;
+    transition: opacity 200ms linear, 300ms ease;
+}
+
+.CustomSelect-optionList.open .CustomSelect-arrowContainer {
+    transform: scaleY(-1);
+}
+
+.CustomSelect-optionList {
+    width: 100%;
+    position: relative;
+}
+
+.CustomSelect-option {
+    border: 1px solid var(--secondary-color-fade-more);
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    text-transform: capitalize;
+    font-size: 1rem;
+    background-color: var(--main-color);
+    display: flex;
+    padding: .35rem;
+    z-index: -1;
+    transition: 500ms ease;
+}
+
+.CustomSelect-optionList.open .CustomSelect-option {
+    z-index: 100;
+    border-radius: 25px;
+    border: 1px solid var(--secondary-color-fade-more);
+}
+
+.CustomSelect-optionList.open .CustomSelect-option:last-of-type {
+    border: 1px solid var(--secondary-color-fade-more);
+}
+
+.CustomSelect-option:last-of-type {
+    border: 1px solid var(--secondary-color-fade-more);
+}
+
+.CustomSelect-optionList.closed .CustomSelect-option {
+    transform: translateY(-100%) !important;
+}
+
+.CustomSelect-option:hover {
+    background-color: var(--highlight-color);
+    color: var(--main-color);
+}
+
+.CustomSelect-option:not(:first-of-type) .CustomSelect-arrowContainer{
+    visibility: hidden;
+}
+
+.CustomSelect-option.active {
+    color: var(--main-color-fade);
+    pointer-events: none;
+}
+
+.CustomSelect-optionList.closed .CustomSelect-option {
+    color: transparent;
+}
