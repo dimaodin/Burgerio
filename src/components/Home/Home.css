@@ -50,6 +50,7 @@
         font-size: 25vw;
         cursor: grab;
         color: var(--secondary-color);
+        cursor: default;
         letter-spacing: -16px;
         display: block;
         transition: 750ms ease;
