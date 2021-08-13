@@ -48,8 +48,8 @@
         transform: translate(-50%, -50%);
         z-index: -1;
         font-size: 25vw;
-        color: var(--secondary-color);
         cursor: default;
+        color: var(--secondary-color);
         letter-spacing: -16px;
         display: block;
         transition: 750ms ease;

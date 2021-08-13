@@ -14,6 +14,7 @@ export default function Footer(props) {
             <div className="Footer-hr">
                 <div className="Footer-hrAccent"></div>
                 <div className="Footer-hrAccent"></div>
+                <div className="Footer-hrAccent"></div>
             </div>
             <div className="Footer-section">
                 <div className="Footer-info">

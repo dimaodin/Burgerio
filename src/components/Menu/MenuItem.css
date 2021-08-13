@@ -57,9 +57,16 @@
 }
 
 .MenuItem-itemPrice {
+    background: rgba(206, 35, 64, 0.774);
+    box-shadow: 0 4px 4px 0 rgba(255, 59, 59, 0.37);
+    backdrop-filter: blur( 2.0px );
+    -webkit-backdrop-filter: blur( 2.0px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     font-size: .85rem;
-    color: var(--highlight-color);
-    text-decoration: underline;
+    color: var(--main-color);
+    padding: .5rem;
+    letter-spacing: 1px;
+    border-radius: 25px;
     font-weight: 600;
 }
 

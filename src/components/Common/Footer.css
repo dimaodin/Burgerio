@@ -24,9 +24,9 @@
 
 .Footer-hrAccent {
     width: 10%;
-    height: 1px;
-    background-color: var(--secondary-color);
-    transform: rotate(-45deg);
+    height: .5px;
+    background-color: var(--secondary-color-fade);
+    transform: rotate(-35deg);
 }
 
 .Footer-social {
@@ -116,7 +116,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: .7rem;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0 auto;
     padding: 0 1rem;
     max-width: 1000px;

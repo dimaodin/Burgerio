@@ -5,7 +5,12 @@
     font-family: 'Montserrat', sans-serif;
     border-radius: 25px;
     margin-top: 2rem;
-    z-index: 1000;
+    z-index: 1;
+}
+@media screen and (min-width: 1025px) {
+    .Contact {
+        z-index: 100;
+    }
 }
 
 .Contact > * {

@@ -16,7 +16,7 @@ function MenuItemModal(props){
     }
 
     if(typeof item.allergies === 'undefined'){
-        item.allergies = ['List', 'of', 'allergies', 'goes', 'here']
+        item.allergies = ['List', 'of', 'allergies', 'goes', 'here.']
     }
 
     let [currentImgIdx, setCurrentImgIdx] = useState(0)
