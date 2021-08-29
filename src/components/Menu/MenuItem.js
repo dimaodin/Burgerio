@@ -25,10 +25,10 @@ export default function MenuItem(props){
         <div onClick={ handleClick } className='MenuItem'>
             <div className="MenuItem-itemNameAndPriceFlex">
                 <p className="MenuItem-itemName">
-                    {item.isNew ? <span className="MenuItem--new">NEW!</span> : ""}
                     {item.name}
+                    {item.isNew ? <span className="MenuItem--new">חדש!</span> : ""}
                 </p>
-                <span className="MenuItem-itemPrice">${item.price.toFixed(2)}</span>
+                <span className="MenuItem-itemPrice">{item.price.toFixed(2)} ₪</span>
             </div>
             <p className="MenuItem-itemDesc">{item.description}</p>
             {optionsArr 

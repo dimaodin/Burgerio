@@ -44,8 +44,8 @@ export default function MobileNav(props){
             <ul className="MobileNav-bar">
                 <li onClick={() => setHamburgerMenuOpen(false)} className="MobileNav-brand">
                     <Link to="/">
-                        <h1>BURGERIO</h1>
-                        <p>Best Meat & Sides.</p>
+                        <h1>בורגריו</h1>
+                        <p>ברזיל זה כאן.</p>
                     </Link>
                 </li>
                 <div onClick={() => setHamburgerMenuOpen(hamburgerMenuOpen => !hamburgerMenuOpen)} className="MobileNav-toggleBtn">
@@ -53,7 +53,7 @@ export default function MobileNav(props){
                     <div className={`MobileNav-gripLine ${hamburgerMenuOpenAni}`}></div>
                 </div>
                 <p className={`${hideAddressAni} MobileNav-address`}>
-                <span role="img" aria-label="rocket">🚀</span> CRAZY HAPPY HOUR DEALS 3PM-7PM MON-FRI! <span role="img" aria-label="rocket">🚀</span>
+                <span role="img" aria-label="rocket">🚀</span> מבצעי הפי האוור משוגעים ימי ראשון מ14 עד 18 <span role="img" aria-label="rocket">🚀</span>
                 </p>
             </ul>
             <HamburgerMenu 

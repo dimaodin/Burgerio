@@ -41,12 +41,21 @@
     box-shadow: 5px 5px 20px #131313;
     min-width: 300px;
     padding: 1.5rem 3rem;
-    color: var(--main-color);
     text-transform: uppercase;
-    letter-spacing: 3px;
     transition: 350ms ease;
     opacity: 0;
     animation: mount 500ms ease forwards 1 200ms;
+}
+
+.Order-btn p{
+    font-size: 3.5rem;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    letter-spacing: 3px;
+}
+
+.Order-btn p:first-of-type {
+    font-size: 1.5rem;
 }
 
 @media screen and (min-width: 1025px){
@@ -73,48 +82,19 @@
     .Order-btn:hover .Order-btnAni::after {
         transform: translateX(-52.5%) scaleX(1);
     }
+
+    .Order-btn p{
+        font-size: 5rem;
+    }
+
+    .Order-btn p:first-of-type {
+        font-size: 3rem;
+    }
 }
 
-.Order-btn p:first-of-type {
-    font-size: .75rem;
-}
-
-.Order-btnArrows {
-    position: absolute;
-    top: calc(50% + 2rem);
-    left: 50%;
-    min-width: 300px;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-around;
-}
-
-.Order-btnArrows i {
-    font-size: 1.5rem;
-    color: var(--main-color);
-    opacity: 0;
-    visibility: hidden;
-    transition: 500ms ease;
-    animation: arrowScale 1s ease infinite alternate;
-}
-
-.Order-btn:hover + .Order-btnArrows i {
+.Order-btn:hover {
     visibility: visible;
     opacity: .75;
-}
-
-.Order-btnArrows:hover {
-    opacity: 0;
-    cursor: default;
-}
-
-@keyframes arrowScale {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(2);
-    }
 }
 
 .Order-services {
@@ -128,10 +108,9 @@
 .Order-services p {
     text-align: center;
     color: var(--secondary-color);
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
+    font-family: var(--serif-font);
     letter-spacing: 2px;
-    font-size: .8rem;
+    font-size: 1.2rem;
     margin: 3.5rem 1rem 1rem 1rem;
 }
 

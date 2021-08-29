@@ -1,173 +1,173 @@
 let beef_burgers = [
     {
         name: "Light my Fire",
-        price: 9.50,
-        description: "Burger topped with peanut butter, PorterHouse blackberry jam, candied bacon & melted cheddar. Served on grilled sourdough bread."
+        price: 49.50,
+        description: "בורגר עם חמאת בוטנים, ריבת אוכמניות, בייקון וצ'דר מומס. מוגש על לחם מחמצת בגריל."
     },
     {
         name: "Highway to Hell",
-        price: 9.50,
-        description: "1/4 lb. Fire-grilled beef patty bbq sauce, smoked bacon, Frazzled onions, Smoked gouda cheese",
+        price: 59.50,
+        description: "1/4 קג רוטב מנגל בקר בקר בגריל אש, בייקון מעושן, בצל מרוסק, גבינת גאודה מעושנת.",
         isNew: true
     },
     {
         name: "Highway to Hell (Double)",
-        price: 12.95,
-        description: "1/4 lb. Pepper Jack Cheese, jalapeños, red onions, jalapeño cream cheese, and our blackberry jam.",
+        price: 49.95,
+        description: "1/4 קג גבינת פלפל ג'ק, ג'לפניו, בצל אדום, גבינת שמנת ג'לפניו וריבת אוכמניות שלנו.",
         isNew: true
     },
     {
         name: "Fear of Dark",
-        price: 9.50,
-        description: "1/4 lb. Burger topped with bleu cheese, bacon, roasted garlic aioli, grilled onions, and PorterHouse steak sauce."
+        price: 64.50,
+        description: "1/4 קג בורגר עם גבינת בלו, בייקון, איולי שום קלוי, בצל על האש ורוטב סטייקים."
     },
     {
         name: "Hey Ho Let's GO",
-        price: 8.50,
-        description: "1/2 lb. Burger with pepper jack cheese, PorterHouse chili, jalapeño coleslaw, red onions, honey mustard.",
+        price: 54.50,
+        description: "1/2 קג בורגר עם גבינת פלפל ג'ק, צ'ילי, קולסלא ג'לפניו, בצל אדום, חרדל דבש.",
         options: [
             {
-                option_name: "Add Cheese",
+                option_name: "תוספת גבינה",
                 option_price: 1
             },
             {
-                option_name: "Add Slab Bacon",
+                option_name: "תוספת בשר",
                 option_price: 1
             }
         ]
     },
     {
         name: "Here comes the Sun",
-        price: 9.50,
-        description: "Burger topped with pepper jack cheese, jalapeno cream cheese, fried onion ring, jalapenos and our house-made chipotle sour cream."
+        price: 74.50,
+        description: "בורגר עם גבינת פלפל ג'ק, גבינת שמנת ג'לפנו, טבעת בצל מטוגנת, ג'לפנוס ושמנת חמוצה צ'יפוטלה תוצרת בית שלנו."
     },
     {
         name: "Cheeseburger",
-        price: 10.50,
-        description: "Fire-grilled beef patty, Sauteed mushrooms, Evoo tossed organic arugula, Swiss cheese"
+        price: 44.50,
+        description: "קציצת בקר על האש, פטריות מוקפצות, ארוגולה אורגנית מושלכת באווו, גבינה שוויצרית."
     },
 ]
 
-let pork_burger = [
+let chicken_burger = [
     {
         name: "War Pigs",
-        price: 8.75,
-        description: "Burger with cheddar cheese, bacon, caramelized balsamic onions and topped with our smoky BBQ mayo."
+        price: 44.75,
+        description: "בורגר עם גבינת צ'דר, בייקון, בצל בלסמי מקורמל ומעליו מאיו מנגל מעושן שלנו."
     },
     {
         name: "The Wall",
-        price: 8.00,
-        description: "Burger with Mac and Cheese, Monterey Jack, Cheddar , Bacon, fried onion ring, and topped with our BBQ Sauce."
+        price: 54.00,
+        description: "בורגר עם מק וגבינה, מונטריי ג'ק, צ'דר, בייקון, טבעת בצל מטוגנת ומעליו רוטב המנגל שלנו."
     },
     {
         name: "Flamethrower",
-        price: 9.00,
-        description: "Burger with Swiss cheese, grilled onions, pickles, and 1000 Island dressing on grilled sourdough bread."
+        price: 59.00,
+        description: "בורגר עם גבינה שוויצרית, בצל על האש, מלפפון חמוץ, ו -1000 רוטב איילנד על לחם מחמצת בגריל."
     },
     {
         name: "Sunrise",
-        price: 8.15,
-        description: "Monterrey Jack Cheese, avocado, fried egg, bacon, and roasted garlic aioli."
+        price: 59.15,
+        description: "גבינת מונטריי ג'ק, אבוקדו, ביצה מטוגנת, בייקון ואיולי שום קלוי."
     },
     {
         name: "Danish",
-        price: 7.79,
-        description: "Burger topped with our slow smoked pulled pork, house-made BBQ sauce, PorterHouse Pimento Cheese, red onions and pickles."
+        price: 69.79,
+        description: "בורגר עם בשר חזיר מעושן איטי שלנו, רוטב ברביקיו תוצרת בית, גבינת פימנטו, בצל אדום וחמוצים."
     }
 ]
 
 let vegan_burger = [
     {
         name: "Alive",
-        price: 8.49,
-        description: "Plant-based burger that has all the juicy, meaty deliciousness of a traditional burger. Topped with lettuce, tomato, red onion, pickles…Served on a pretzel bun.",
+        price: 49.49,
+        description: "המבורגר צמחי שיש בו את כל הטעימות העסיסית והבשרנית של המבורגר מסורתי. עם חסה, עגבנייה, בצל אדום, חמוצים, מוגש על לחמנייה של בייגלה.",
         isNew: true
     },
     {
         name: "The Meatless",
-        price: 7.00,
-        description: "Our house-made black bean veggie burger with Monterey Jack cheese, lettuce, tomato, onions, and our PorterHouse tomato jam."
+        price: 54.95,
+        description: "המבורגר ירקות של שעועית שחורה תוצרת בית שלנו עם גבינת מונטריי ג'ק, חסה, עגבנייה, בצל וריבת העגבניות שלנו."
     },
     {
         name: "Welcome to the vegan jungle",
-        price: 9.50,
-        description: "(*CALL FOR AVAILABILITY) Boca burger, Lettuce, Tomato"
+        price: 64.50,
+        description: "(*להתקשר כדי לוודא אם במלאי) המבורגר בוקה, חסה, עגבנייה"
     }
 ]
 
 let specials = [
     {
         name: "M.C Burger",
-        price: 12.50,
-        description: "Fried chicken, Alabama white sauce"
+        price: 44.50,
+        description: "עוף מטוגן, רוטב לבן מאלבמה."
     },
     {
         name: "Spicy Garlic",
-        price: 8.50,
-        description: "1/4 lb. Beef patty, Chili, Mustard, Cole slaw, Onions"
+        price: 74.50,
+        description: "1/4 קג קציצת בקר, צ'ילי, חרדל, סלט קול, בצל"
     },
     {
         name: "Krapow Burger",
-        price: 9.00,
-        description: "1/4 lb. Beef patty, Pickles, American cheese, Lettuce, Square Sauce"
+        price: 69.00,
+        description: "1/4 קג קציצת בקר, מלפפון חמוץ, גבינה אמריקאית, חסה, רוטב מרובע"
     },
     {
         name: "The F**k Up",
-        price: 8.25,
-        description: "Burger topped with cheddar cheese, a fried egg, candied bacon, and bacon mayo. Served on Sourdough bread."
+        price: 74.25,
+        description: "בורגר ומעליו גבינת צ'דר, ביצה מטוגנת, בייקון מסוכר ומאיו בייקון. מוגש על לחם מחמצת."
     },
     {
         name: "Grilled Cheese",
-        price: 6.50,
-        description: "Burger with American cheese, bacon, lettuce, tomato, pickles and bacon mayo."
+        price: 44.50,
+        description: "בורגר עם גבינה אמריקאית, בייקון, חסה, עגבנייה, מלפפון חמוץ ומאיון בייקון."
     },
     {
         name: "Frisco Melt",
-        price: 7.50,
-        description: "Two single burger patties with American Cheese, shredded lettuce, chopped onions, pickles and thousand island."
+        price: 54.50,
+        description: "שתי קציצות בורגר בודדות עם גבינה אמריקאית, חסה מגורדת, בצל קצוץ, מלפפון חמוץ ואלף האיים."
     }
 ]
 
 let sides = [
     {
         name: "Chili cheese fries",
-        price: 5.00,
-        description: "Fries smothered with PorterHouse Chili, Cheddar Jack cheese and jalapenos."
+        price: 20.00,
+        description: "צ'יפס נחנק עם צ'ילי, גבינת צ'דר ג'ק וג'לפנוס."
     },
     {
         name: "Cassava chips 381",
-        price: 5.00,
-        description: "Crispy potatoes with garlic and onion"
+        price: 25.00,
+        description: "תפוחי אדמה פריכים עם שום ובצל"
     },
     {
         name: "Traditional fries",
-        price: 4.25
+        price: 19.25
     },
     {
         name: "Chicken fingers",
-        price: 4.25
+        price: 29.25
     },
     {
         name: "Rustic Belgian Fries",
-        price: 2.50,
+        price: 24.50,
         options: [
             {
-                option_name: "Make It Large",
-                option_price: 2.00
+                option_name: "תגדילו לי",
+                option_price: 3.00
             }
         ]
     },
     {
         name: "Tater Tots",
-        price: 3.50,
+        price: 19.50,
     },
     {
         name: "Sweet Potatos",
-        price: 3.00,
+        price: 29.00,
         options: [
             {
-                option_name: "Make It Large",
-                option_price: 2.00
+                option_name: "תגדילו לי",
+                option_price: 3.00
             }
         ]
     }
@@ -176,64 +176,53 @@ let sides = [
 let bevs = [
     {
         name: "Bottled Water",
-        price: 1.5
+        price: 7
     },
     {
         name: "Coca Cola",
-        price: 2.50
+        price: 12
     },
     {
         name: "Sprite",
-        price: 2.50
+        price: 12
     },
     {
         name: "Fanta",
-        price: 2.50
+        price: 12
     },
     {
         name: "Lemonade",
-        price: 2.50
+        price: 10
     },
     {
         name: "Heineken",
-        price: 2.50
+        price: 15
     },
     {
         name: "Carlsberg",
-        price: 2.50
+        price: 17
     }
 ]
 
-// let test = [
-//     {
-//         name: "Test Item",
-//         price: 1.5
-//     },
-//     {
-//         name: "Test Item 2",
-//         price: 2.50
-//     }
-// ]
-
 let menuObj = {
     beef_burgers: {
-        header: "Beef Burger",
-        note: "All burgers served with a fresh pickle on the side.",
+        header: "המבורגר בקר",
+        note: "כל ההמבורגרים מוגשים עם מלפפון חמוץ טרי בצד.",
         menuItems: beef_burgers,
         categoryID: "beef_burgers"
     },
-    pork_burger: {
-        header: "Pork Burger",
-        menuItems: pork_burger,
-        categoryID: "pork_burger"
+    chicken_burger: {
+        header: "המבורגר עוף",
+        menuItems: chicken_burger,
+        categoryID: "chicken_burger"
     },
     vegan_burger: {
-        header: "Vegan Burger",
+        header: "המבורגר צמחוני",
         menuItems: vegan_burger,
         categoryID: "vegan_burger"
     },
     specials: {
-        header: "Specials",
+        header: "מיוחדים",
         menuItems: specials,
         categoryID: "specials"
     },
@@ -243,12 +232,12 @@ let menuObj = {
     //     categoryID: "test"
     // },
     sides: {
-        header: "Sides",
+        header: "משהו בצד",
         menuItems: sides,
         categoryID: "sides"
     },
     bevs: {
-        header: "Bevrage",
+        header: "משקאות",
         menuItems: bevs,
         categoryID: "bevs"
     }

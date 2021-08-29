@@ -1,4 +1,5 @@
 .AboutNav {
+    direction: ltr;
     position: absolute;
     background-color: var(--main-color-darker);
     border-radius: 25px;

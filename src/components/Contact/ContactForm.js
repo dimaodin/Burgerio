@@ -161,7 +161,7 @@ export default function ContactForm(props) {
 			</div>
 			<div className='ContactForm-inputWrapper ContactForm-inputWrapper--2col'>
 				<div className='ContactForm-inputWrapper'>
-					<label htmlFor='firstname'>First Name:</label>
+					<label htmlFor='firstname'>שם פרטי:</label>
 					<input
 						type='text'
 						name='firstname'
@@ -175,7 +175,7 @@ export default function ContactForm(props) {
 					/>
 				</div>
 				<div className='ContactForm-inputWrapper'>
-					<label htmlFor='lastname'>Last Name:</label>
+					<label htmlFor='lastname'>שם משפחה:</label>
 					<input
 						type='text'
 						name='lastname'
@@ -190,7 +190,7 @@ export default function ContactForm(props) {
 				</div>
 			</div>
 			<div className='ContactForm-inputWrapper'>
-				<label htmlFor='email'>E-mail:</label>
+				<label htmlFor='email'>דואר אלקטרוני:</label>
 				<input
 					type='email'
 					name='email'
@@ -200,12 +200,12 @@ export default function ContactForm(props) {
 							? 'ContactForm-input--invalid'
 							: null
 					}
-					placeholder='E.g: johndoe@website.com'
+					placeholder='לדוגמה: hey@vinovaso.com'
 					value={email.value}
 				/>
 			</div>
 			<div className='ContactForm-inputWrapper'>
-				<label htmlFor='phone'>Phone Number:</label>
+				<label htmlFor='phone'>טלפון נייד:</label>
 				<input
 					type='text'
 					name='phone'
@@ -216,7 +216,6 @@ export default function ContactForm(props) {
 							? 'ContactForm-input--invalid'
 							: null
 					}
-					placeholder='E.g: (123) 456-7890'
 					value={phone.value}
 				/>
 			</div>
@@ -224,19 +223,19 @@ export default function ContactForm(props) {
 				<CustomSelect
 					getVal={(val) => dispatch({ type: 'custom_select', payload: val })}
 					options={[
-						'Suggestions',
-						'Review',
-						'Concern',
-						'Marketing',
-						'Private Events',
-						'Employment',
-						'Other',
+						'הצעות',
+						'ביקורת',
+						'דאגה',
+						'שיווק',
+						'אירוע פרטי',
+						'משרות',
+						'אחר',
 					]}
 				/>
 				<input type='hidden' name='subject' value={subject.value} />
 			</div>
 			<div className='ContactForm-inputWrapper'>
-				<label>Message:</label>
+				<label>ההודעה:</label>
 				<textarea
 					name='message'
 					maxLength='1000'
@@ -252,11 +251,11 @@ export default function ContactForm(props) {
 			</div>
 			<div className='ContactForm-inputWrapper ContactForm-inputWrapper--checkbox'>
 				<input onClick={handleChange} type='checkbox' id='checkbox' name='copy_recipient' />
-				<label htmlFor='checkbox'>Send me a copy of this email</label>
+				<label htmlFor='checkbox'>תשלחו לי עותק של ההודעה למייל.</label>
 			</div>
 			<button className='ContactForm-submit' onClick={handleSubmissionClick}>
 				<i className='ContactForm-submitIcon fas fa-envelope'></i>
-				<p>Send</p>
+				<p>צאו לדרך</p>
 			</button>
 		</form>
 	);

@@ -16,7 +16,7 @@ function MenuItemModal(props){
     }
 
     if(typeof item.allergies === 'undefined'){
-        item.allergies = ['List', 'of', 'allergies', 'goes', 'here.']
+        item.allergies = ['רשימת', 'האלרגיות', 'תהיה', 'כאן.']
     }
 
     let [currentImgIdx, setCurrentImgIdx] = useState(0)
@@ -81,15 +81,15 @@ function MenuItemModal(props){
             </div>
             <div className="MenuItemModal-infoBox">
                 <div className="MenuItemModal-infoBoxSection">
-                    <h4>Ingredients:</h4>
+                    <h4>רכיבים:</h4>
                     <p>{item.description}</p>
                 </div>
                 <div className="MenuItemModal-infoBoxSection">
-                    <h4>Allergies:</h4>
+                    <h4>אלרגיות:</h4>
                     <p>{item.allergies.reduce((acc, al) => `${acc}, ${al}`)}</p>
                 </div>
                 <div className="MenuItemModal-infoBoxSection">
-                    <h4>Price:<span>${item.price.toFixed(2)}</span></h4>
+                    <h4>מחיר: <span>₪{item.price.toFixed(2)}</span></h4>
                 </div>
             </div>
         </div>

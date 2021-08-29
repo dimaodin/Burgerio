@@ -7,7 +7,6 @@ Footer.propTypes = {
 };
 
 export default function Footer(props) {
-    const { atTop } = props;
 
     return (
         <footer className="Footer">
@@ -19,23 +18,23 @@ export default function Footer(props) {
             <div className="Footer-section">
                 <div className="Footer-info">
                     <div className="Footer-infoSection">
-                        <h3>Address</h3>
+                        <h3>כתובת <span role="img" aria-label="Round Pushpin">📍</span></h3>
                         <a
                             href="https://www.google.com/maps"
                             target="_blank"
                             rel="noopener noreferrer">
-                            Avenida Roberto Silveira 381, Niteroi, Rio de Janeiro, Brazil.
+                            רוטשילד 23, תל אביב, ישראל <span role="img" aria-label="israeli flag"> 🇮🇱</span> 
                         </a>
                     </div>
                     <div className="Footer-infoSection">
-                        <h3>Hours we open</h3>
-                        <p>Monday - Saturday: 10am - 9pm</p>
-                        <p>Sunday: 11am - 5pm</p>
+                        <h3>שעות פתיחה <span role="img" aria-label="Clock">🕒</span></h3>
+                        <p>ראשון עד חמישי: 10-23</p>
+                        <p>שבת: 18-23</p>
                     </div>
                     <div className="Footer-infoSection">
-                        <h3>Phone number</h3>
-                        <a className="Footer-phone" href="tel:55-991-487020">
-                            <p>(55) 991-487020</p>
+                        <h3>טלפון נייד <span role="img" aria-label="Phone">📱</span></h3>
+                        <a className="Footer-phone" href="tel:972991487020">
+                            <p>991-487-020 (972+)</p>
                         </a>
                     </div>
                 </div>
@@ -62,26 +61,18 @@ export default function Footer(props) {
             </div>
             <div className="Footer-message">
                 <p>
-                    © 2021 Burgerio. All rights reserved.
+                © 2021 בורגריו, כל הזכויות שמורות.
                 </p>
                 <p>
-                    Made by <a  
+                    פותח ע"י <a  
                     href="https://github.com/dimaodin"
                     target="_blank"
                     rel="noopener noreferrer">
-                    Dima Odintsov.
+                    דימה אודינצוב.
                     </a>
                 </p>
             </div>
-            <div
-                className={`Footer-callBtn ${
-                    atTop ? "" : "Footer-callBtn--unhide"
-                }`}>
-                <a href="tel:55-991-487020">
-                    <i className="fas fa-phone-alt"></i>
-                    <p>CALL NOW: <span>(55) 991-487020</span></p>
-                </a>
-            </div>
+
         </footer>
     );
 }

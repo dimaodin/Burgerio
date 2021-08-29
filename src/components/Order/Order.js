@@ -56,16 +56,12 @@ export default function Order(props) {
         <div className="Order">
             <div className="Order-background">
                 <div onClick={ executeScroll } className="Order-btn">
-                    <p><span className='Order-btnAni'>Click</span> on me to</p>
-                    <p>Select Ordering Platform</p>
-                </div>
-                <div className="Order-btnArrows">
-                    <i className="fas fa-long-arrow-alt-down"></i>
-                    <i className="fas fa-long-arrow-alt-down"></i>
+                    <p><span className='Order-btnAni'>לחצו</span> עליי</p>
+                    <p>כדי לבחור פלטפורמת שילוח</p>
                 </div>
             </div>
             <div ref={platformListRef} className="Order-services">
-                <p>Our full menu is avalable for pickup and/or delivery with the following providers:</p>
+                <p>התפריט המלא שלנו זמין לאיסוף ו/או למשלוח אצל הספקים הבאים:</p>
                 <div className="Order-platformList">
                     { platformList }
                 </div>

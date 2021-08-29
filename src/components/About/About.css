@@ -30,7 +30,6 @@
     align-items: center;
     justify-content: center;
     color: var(--secondary-color);
-    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     opacity: .25;
     transform: translate(-50%, -50%) translateY(20%);
@@ -55,20 +54,26 @@
     opacity: .9;
     margin: 2rem 1rem;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 2.5rem;
 }
 
-@media screen and (min-width: 1025px){
-
-    .About-quote {
-        font-size: 2.5rem;
-    }
+.About-quote blockquote {
+    font-family: var(--main-font);
 }
 
 .About-quote span {
     display: block;
     margin-top: 0.5rem;
-    font-size: .7rem;
+    font-size: 1rem;
     font-style: italic;
 }
+
+@media screen and (min-width: 1025px){
+    .About-quote {
+        font-size: 4.5rem;
+    }
+    .About-quote span {
+        font-size: 2rem;
+    }
+}
+

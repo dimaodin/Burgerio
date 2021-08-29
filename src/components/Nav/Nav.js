@@ -5,11 +5,11 @@ import FullNav from './FullNav';
 import PropTypes from 'prop-types';
 
 let navLinks = [
-	{ path: '/', text: 'Home' },
-	{ path: '/menu', text: 'our Menu' },
-	{ path: '/about', text: 'About' },
-	{ path: '/contact', text: 'contact' },
-	{ path: '/order', text: 'Order now' },
+	{ path: '/', text: 'בית' },
+	{ path: '/menu', text: 'תפריט' },
+	{ path: '/about', text: 'עלינו' },
+	{ path: '/contact', text: 'צרו קשר' },
+	{ path: '/order', text: 'הזמן עכשיו' },
 ];
 
 Nav.propTypes = {

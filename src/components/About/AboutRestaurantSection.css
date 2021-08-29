@@ -92,25 +92,26 @@
 }
 
 .AboutRestaurantSection-header {
-    text-transform: uppercase;
+    font-family: var(--main-font);
     font-weight: 400;
-    font-size: 1.75rem;
+    font-size: 2.8rem;
     letter-spacing: 2px;
     text-decoration: none;
     margin-bottom: 2rem;
 }
 
 .AboutRestaurantSection-info p {
-    text-transform: uppercase;
+    font-family: var(--serif-font);
 }
 
 .AboutRestaurantSection-text {
-    font-size: .8rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
 }
 
 .AboutRestaurantSection-highlightText {
     opacity: .5;
+    font-size: 1rem;
 }
 
 .AboutRestaurantSection hr {

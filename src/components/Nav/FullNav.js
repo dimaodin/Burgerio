@@ -28,15 +28,15 @@ export default function FullNav(props){
             <ul className={`${navBarAni} FullNav-navBar`}>
                 <Link to="/" className={`${navBarBrandAni} FullNav-brandContainer`}>
                     <img src={whiteLogo} alt=""/>
-                    <div>
-                        <h1 className='FullNav-brand'>Burgerio</h1>
-                        <p>Best Meat & Sides.</p>
+                    <div className='FullNav-brand'>
+                        <h1>בורגריו</h1>
+                        <p>ברזיל זה כאן.</p>
                     </div>
                 </Link>
                 <div className="FullNav-linkList">
                     {desktopLinks}
                 </div>
-                <p className={`${addressAni} FullNav-address`}><span role="img" aria-label="rocket">🚀</span> CRAZY HAPPY HOUR DEALS 3PM-7PM MON-FRI! <span role="img" aria-label="rocket">🚀</span></p>
+                <p className={`${addressAni} FullNav-address`}><span role="img" aria-label="rocket">🚀</span> מבצעי הפי האוור משוגעים ימי ראשון מ14 עד 18<span role="img" aria-label="rocket">🚀</span></p>
             </ul>
         </nav>
     );

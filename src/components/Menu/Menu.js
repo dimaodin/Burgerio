@@ -61,11 +61,11 @@ function Menu(props){
     return (
         <div ref={ menuPageRef } style={menuBackgroundStyle} className={`Menu ${ inView ? 'inView' : null}`}>
             <div className="Menu-headerArea Menu-headerArea--first" style={headerBackgroundStyle}>
-                <p className='Menu-header'>Make burgers, not war. <span className="Menu-brand">Burgerio</span> brings our peace to <span className="Menu-brand">you.<span role="img" aria-label="peace">✌️</span></span></p>
+                <p className='Menu-header'>תעשו בורגרים, לא מלחמה. <span className="Menu-brand">בורגריו </span> מביא את השלום <span className="Menu-brand">אלייך.<span role="img" aria-label="peace">✌️</span></span></p>
             </div>
             <div className='Menu-headerArea Menu-headerArea--secondary'>
                 <i className='fas fa-hamburger'></i>
-                <h3>Our Menu:</h3>
+                <h3>התפריט שלנו:</h3>
                 <MenuCategoryBtns
                     menuDataArr={menuDataArr}
                     executeScroll={executeScroll} 
@@ -87,7 +87,6 @@ function Menu(props){
             <div onClick={() =>  window.scrollTo({ top: 0, behavior: "smooth" })} 
                 className={`${!atTop ? 'Menu-scrollTop--unhide' : null} Menu-scrollTop`}>
                 <i className="fas fa-arrow-up"></i>
-                <p>TOP</p>
             </div>
         </div>
     )

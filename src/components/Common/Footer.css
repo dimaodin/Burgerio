@@ -53,77 +53,39 @@
 }
 
 .Footer-infoSection {
+    direction: rtl;
     margin: .5rem 2rem;
 }
 
 .Footer-infoSection h3 {
-    font-family: 'Francois One', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: .125rem;
-    font-size: 1rem;
+    color: var(--secondary-color);
+    font-family: var(--main-font);
+    font-weight: 700;
+    letter-spacing: .3rem;
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
 }
 
 .Footer-infoSection p, 
 .Footer-infoSection a { 
-    font-family: 'Montserrat', sans-serif;
-    font-size: .9rem;
-    color: var(--secondary-color);
-}
-.Footer-callBtn {
-    height: 2rem;
-    position: fixed;
-    bottom: 0;
-    opacity: 0;
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    background-color: var(--highlight-color);
-    backdrop-filter: blur( 15.0px );
-    -webkit-backdrop-filter: blur( 15.0px );
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    z-index: 100;
-    transition: 300ms ease-in;
-}
-
-.Footer-callBtn--unhide {
-    opacity: .85;
-}
-
-.Footer-callBtn a {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.Footer-callBtn i {
-    color: var(--main-color);
-    margin-right: .5rem;
-    font-size: 1.25rem;
-}
-
-.Footer-callBtn p {
-    color: var(--main-color);
-    line-height: 2rem;
-    font-weight: 300;
-    margin-bottom: .1rem;
-}
-.Footer-callBtn p span {
-    font-weight: 500;
+    font-weight: 700;
+    font-family: var(--serif-font);
+    font-size: 1.1rem;
+    color: var(--secondary-color2);
 }
 
 .Footer-message {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: .7rem;
-    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: .8rem;
+    letter-spacing: 1px;
     margin: 0 auto;
     padding: 0 1rem;
     max-width: 1000px;
 }
 
-.Footer-message p span {
-    text-decoration: underline;
+.Footer-message p {
+    font-family: var(--main-font);
+    font-weight: 300;
 }
 .Footer-message a {
     text-decoration: none;

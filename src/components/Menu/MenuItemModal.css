@@ -26,13 +26,16 @@
 .MenuItemModal-header {
     font-weight: 400;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
     background-color: var(--main-color);
     color: var(--secondary-color);
     padding: 1.5rem .25rem;
     letter-spacing: 1px;
+}
+
+.MenuItemModal-header p {
+    font-family: var(--main-font);
 }
 
 .MenuItemModal-imgBox {
@@ -119,9 +122,14 @@
 
 .MenuItemModal-infoBox > * {
     padding: 0 1rem;
-    text-transform: uppercase;
-    font-size: .9rem;
+    font-size: 1.3rem;
     letter-spacing: 1px;
+}
+
+.MenuItemModal-infoBox h4 {
+    font-family: var(--serif-font);
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .MenuItemModal-infoBox span {
@@ -130,6 +138,8 @@
 }
 
 .MenuItemModal-infoBox p {
-    font-size: .75rem;
+    font-family: var(--serif-font);
+    font-weight: 500;
+    font-size: 1rem;
     padding-top: 0;
 }

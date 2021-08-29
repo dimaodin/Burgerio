@@ -42,18 +42,19 @@
 
 @media screen and (min-width: 1025px) {
     .Home-brand {
+        font-family: var(--main-font);
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: -1;
-        font-size: 25vw;
+        font-size: 45vw;
         cursor: default;
-        color: var(--secondary-color);
-        letter-spacing: -16px;
+        color: var(--highlight-color);
+        letter-spacing: 20px;
         display: block;
         transition: 750ms ease;
-        opacity: .4;
+        opacity: .3;
     }
 }
 
@@ -75,41 +76,33 @@
 }
 
 .Home-menu {
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
     transition: 300ms ease;
-    border-radius: 25px;
-    background-color: var(--highlight-color);
 }
 
 .Home-menu a{
     padding: 10px;
+    font-family: var(--main-font);
+    letter-spacing: 3px;
     color: var(--main-color);
-    font-weight: 700;
+    background-color: var(--highlight-color);
+    border-radius: 25px;
+    font-weight: 400;
 }
 
-.Home-menu::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 75%;
-    height: 4px;
-    background-color: var(--highlight-color);
-    transform: scaleX(0);
-    transition: 250ms ease;
+.Home-menu a:hover {
+    background-color: var(--secondary-color);
+    transition: 500ms ease;
 }
 
 @media screen and (min-width: 1025px){
     .Home-logo {
         width: auto;
     }
-
     .Home-logo--loaded {
         opacity: .85;
     }
@@ -119,8 +112,8 @@
     margin: 3rem auto;
     margin-bottom: 1.5rem;
     padding: 0 1rem;
-    font-family: 'Francois One', sans-serif;
-    text-align: left;
+    font-family: var(--serif-font);
+    text-align: right;
     max-width: 1000px;
     opacity: 0;
     z-index: 1;
@@ -137,7 +130,6 @@
 }
 
 .Home-header {
-    text-transform: uppercase;
     font-weight: 500;
     position: relative;
     display: inline-block;
@@ -151,15 +143,15 @@
     left: 0;
     right: 0;
     height: 1px;
+    width: 74%;
     background-color: var(--secondary-color)
 }
 
 .Home-message {
     margin-top: 1.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--serif-font);
     font-weight: 400;
-    font-size: .9rem;
-    text-transform: uppercase;
+    font-size: 1.2rem;
     line-height: 1.5rem;
     position: relative;
 }

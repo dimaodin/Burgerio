@@ -1,5 +1,4 @@
 .MenuItem {
-    font-family: 'Montserrat', sans-serif;
     padding: .5rem 0rem;
     transition: 200ms ease-in;
 }
@@ -20,7 +19,7 @@
 .MenuItem:hover {
     cursor: pointer;
     padding: 1rem 1rem;
-    box-shadow: 5px 5px 10px #2f2f2fa1;
+    box-shadow: 5px 3px 10px #2f2f2fa1;
     border-radius: 25px;
     }
 }
@@ -28,12 +27,14 @@
 .MenuItem--new {
     display: block;
     color: var(--highlight-color);
+    font-weight: 500;
     margin-right: .25rem;
+    letter-spacing: 1px;
     transform-origin: center;
     transform: rotate(-10deg);
-    font-size: .85rem;
+    font-size: 1.1rem;
     text-decoration: underline;
-    font-family: 'Permanent Marker';
+    font-family: var(--main-font);
 }
 
 .MenuItem-itemNameAndPriceFlex {
@@ -43,17 +44,21 @@
 }
 
 .MenuItem-itemName {
+    font-family: var(--main-font);
+    font-size: 1.7rem;
+    font-weight: 300;
     display: flex;
     align-items: center;
-    font-weight: 700;
-    margin-right: .5rem;
+    letter-spacing: 1px;
 }
 
 .MenuItem-itemDesc {
+    font-family: var(--serif-font);
+    font-weight: 700;
     margin-top: .15rem;
-    font-size: .75rem;
-    font-weight: 400;
+    font-size: 1rem;
     max-width: 85%;
+    margin-right: .5rem;
 }
 
 .MenuItem-itemPrice {
@@ -76,9 +81,8 @@
 }
 
 .MenuItem-itemOption {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--serif-font);
     font-size: .75rem;
     margin-right: .5rem;
     font-style: italic;
-    text-transform: capitalize;
 }

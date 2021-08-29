@@ -6,7 +6,7 @@
     top: 100%;
     left: 0;
     margin-bottom: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 100%;
     overflow: scroll;
     scrollbar-width: none;
@@ -28,7 +28,7 @@
     display: inline-block;
     padding: .5rem .75rem;
     white-space: nowrap;
-    font-family: 'Francois One', sans-serif;
+    font-family: var(--main-font);
     text-transform: uppercase;
     color: #2f2f2fa1;
     transition: 300ms ease;
@@ -55,17 +55,6 @@
 
 .MenuCategoryBtns-btn:hover {
     position: relative;
-}
-
-.MenuCategoryBtns-btn:hover::after {
-    position: absolute;
-    content: "";
-    height: 3px;
-    background-color: var(--secondary-color2);
-    width: 100%;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 /* Active category btn will have class 'MenuCategoryBtns-activeCategory' -- currently has no styles as screen scrolls anyway

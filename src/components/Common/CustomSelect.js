@@ -50,7 +50,7 @@ export default function CustomSelect(props) {
     const openMenuAni = isMenuOpen ? "open" : "closed";
     return (
         <div className="CustomSelect">
-            <p className="CustomSelect-label">Subject</p>
+            <p className="CustomSelect-label">הנושא:</p>
             <div
                 onClick={openSelect}
                 className={`CustomSelect-optionList ${openMenuAni}`}>

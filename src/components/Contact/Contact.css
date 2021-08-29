@@ -2,15 +2,9 @@
     width: 100vw;
     min-height: 75vh;
     background-color: var(--secondary-color);
-    font-family: 'Montserrat', sans-serif;
     border-radius: 25px;
     margin-top: 2rem;
     z-index: 1;
-}
-@media screen and (min-width: 1025px) {
-    .Contact {
-        z-index: 100;
-    }
 }
 
 .Contact > * {
@@ -54,9 +48,16 @@
 }
 
 .Contact-header h3 {
+    font-family: var(--main-font);
     letter-spacing: 3px;
-    font-size: 2rem;
+    font-weight: 500;
+    font-size: 4rem;
     margin-bottom: 1rem;
+}
+
+.Contact-header p {
+    font-family: var(--main-font);
+    font-size: 2rem;
 }
 
 @media screen and (min-width: 1025px){

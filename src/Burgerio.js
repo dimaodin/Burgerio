@@ -118,7 +118,7 @@ export default function Burgerio() {
 						exact
 						path='/'
 						render={() => (
-							<Home atTop={atTop} loadingMessage={'Going Back Home'} disableLoading />
+							<Home atTop={atTop} loadingMessage={'חוזרים הביתה!'} disableLoading />
 						)}
 					/>
 					<Route
@@ -129,7 +129,7 @@ export default function Burgerio() {
 								atTop={atTop}
 								isMobile={isMobile}
 								componentMounted={componentMounted}
-								loadingMessage={'Loading our Menu'}
+								loadingMessage={'טוענים את התפריט'}
 								disableLoading={false}
 								disableItemModal={false}
 							/>

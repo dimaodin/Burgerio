@@ -11,7 +11,7 @@ const MenuCategory = React.forwardRef(function MenuCategory(props, ref){
             let optionsArr = [];
             if(item.options !== undefined){
                 item.options.forEach(option => {
-                    optionsArr.push(<p key={ option.option_name } className="MenuItem-itemOption">{option.option_name} - +${option.option_price.toFixed(2)}</p>)
+                    optionsArr.push(<p key={ option.option_name } className="MenuItem-itemOption">{option.option_name} - {option.option_price.toFixed(2)} ₪</p>)
                 })
             }
             return <MenuItem key={ item.name } item={ item } optionsArr={ optionsArr } disableItemModal={ disableItemModal } />
