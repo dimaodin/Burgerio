@@ -114,7 +114,7 @@
 
 .Menu-scrollTop i {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -30%);
     color: var(--main-color);
@@ -125,13 +125,13 @@
     .Menu-scrollTop {
         bottom: 2rem;
         right: 2rem;
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
         border-radius: 25px;
     }
 
     .Menu-scrollTop i {
         font-size: 1.5rem;
-        top: 44%;
+        top: 40%;
     }
 }

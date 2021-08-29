@@ -82,11 +82,11 @@
 }
 
 .MenuItemModal-imgBoxArrow:first-of-type {
-    left: 2.5%;
+    right: 2.5%;
 }
 
 .MenuItemModal-imgBoxArrow:last-of-type {
-    right: 2.5%;
+    left: 2.5%;
 }
 
 .MenuItemModal-imgCounter {
@@ -98,7 +98,7 @@
 .MenuItemModal-imgCounterCircle {
     height: .75rem;
     width: .75rem;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--highlight-color);
     border-radius: 25px;
     margin: .125rem;
     cursor: pointer;
@@ -107,7 +107,7 @@
 }
 
 .MenuItemModal-imgCounterCircle--active {
-    background-color: var(--main-color);
+    background-color: var(--highlight-color);
 }
 
 .MenuItemModal-infoBox {
@@ -128,18 +128,24 @@
 
 .MenuItemModal-infoBox h4 {
     font-family: var(--serif-font);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.3rem;
 }
 
 .MenuItemModal-infoBox span {
+    padding: .3rem .5rem;
+    border: 1px solid var(--highlight-color);
+    background-color: var(--highlight-color);
+    box-shadow: 0 4px 4px 0 rgba(255, 59, 59, 0.37);
+    border-radius: 25px;
+    font-size: 1rem;
     margin-left: .5rem;
-    color: var(--highlight-color);
+    color: var(--main-color);
 }
 
 .MenuItemModal-infoBox p {
     font-family: var(--serif-font);
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1rem;
     padding-top: 0;
 }

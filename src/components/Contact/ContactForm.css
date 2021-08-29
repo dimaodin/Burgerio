@@ -88,12 +88,9 @@
     background-color: var(--highlight-color-fade-more) !important;
 }
 
-.ContactForm-inputWrapper input[type=text] {
-    text-transform: capitalize;
-}
-
 .ContactForm-inputWrapper input[type=text],
 .ContactForm-inputWrapper input[type=email] {
+    font-family: var(--serif-font);
     background-color: var(--main-color);
     padding: .5rem;
     margin-bottom: 1rem;
@@ -125,7 +122,7 @@
 
 .ContactForm textarea {
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--serif-font);
     padding: .5rem;
     font-size: .95rem;
     background-color: var(--main-color);
@@ -141,6 +138,7 @@
 }
 
 .ContactForm-inputWrapper--checkbox label {
+    font-size: 1rem;
     cursor: pointer;
     margin: 0;
     margin-right: .5rem;

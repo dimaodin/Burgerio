@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Bellefair, Karantina;
+  font-family: Heebo, Karantina;
   cursor: default;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -8,12 +8,12 @@ body {
 }
 
 code {
-  font-family: Karantina, Bellefair;
+  font-family: Karantina, Heebo;
 }
 
 :root {
   --main-font: 'Karantina', sans-serif;
-  --serif-font: 'Bellefair', serif;
+  --serif-font: 'Heebo', sans-serif;
   --main-color: #fcf9f9;
   --main-color-darker: #f3f3f3;
   --main-color-fade-less: #f1f1f1bb;

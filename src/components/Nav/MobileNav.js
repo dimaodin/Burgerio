@@ -45,15 +45,16 @@ export default function MobileNav(props){
                 <li onClick={() => setHamburgerMenuOpen(false)} className="MobileNav-brand">
                     <Link to="/">
                         <h1>בורגריו</h1>
-                        <p>ברזיל זה כאן.</p>
+                        <p>ברזיל זה כאן. <span role="img" aria-label="Brazil's Flag">🇧🇷</span></p>
                     </Link>
                 </li>
                 <div onClick={() => setHamburgerMenuOpen(hamburgerMenuOpen => !hamburgerMenuOpen)} className="MobileNav-toggleBtn">
                     <div className={`MobileNav-gripLine ${hamburgerMenuOpenAni}`}></div>
                     <div className={`MobileNav-gripLine ${hamburgerMenuOpenAni}`}></div>
+                    <div className={`MobileNav-gripLine ${hamburgerMenuOpenAni}`}></div>
                 </div>
                 <p className={`${hideAddressAni} MobileNav-address`}>
-                <span role="img" aria-label="rocket">🚀</span> מבצעי הפי האוור משוגעים ימי ראשון מ14 עד 18 <span role="img" aria-label="rocket">🚀</span>
+                <span role="img" aria-label="rocket">🚀</span> מבצעי הפי האוור משוגעים ימי ראשון החל מהשעות 14 עד 18 <span role="img" aria-label="rocket">🚀</span>
                 </p>
             </ul>
             <HamburgerMenu 

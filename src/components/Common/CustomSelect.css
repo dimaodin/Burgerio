@@ -15,10 +15,8 @@
 }
 
 .CustomSelect-display {
-
     cursor: pointer;
     display: flex;
-    text-transform: capitalize;
     border-radius: 25px;
     background-color: var(--main-color);
     border-right: 3px solid var(--main-color-fade);
@@ -59,6 +57,7 @@
 }
 
 .CustomSelect-option {
+    font-family: var(--serif-font);
     border: 1px solid var(--secondary-color-fade-more);
     height: 100%;
     cursor: pointer;
@@ -73,7 +72,12 @@
     transition: 500ms ease;
 }
 
+.CustomSelect-option p {
+    font-family: var(--serif-font);
+}
+
 .CustomSelect-optionList.open .CustomSelect-option {
+    font-family: var(--serif-font);
     z-index: 100;
     border-radius: 25px;
     border: 1px solid var(--secondary-color-fade-more);

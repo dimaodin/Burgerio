@@ -32,7 +32,7 @@ export default function Contact(){
         <section className="Contact">
             <div className="Contact-header" style={contactBackground}>
                 <div className="Contact-headerContainer">
-                    <h3>שלום לכולם! <span role="img" aria-label="fire">🔥</span></h3>
+                    <h3>שלום! <span role="img" aria-label="fire">🔥</span></h3>
                     <p>יש לכם שאלה או הצעה?</p>
                     <p>דברו איתנו עכשיו <span role="img" aria-label="smiley">😊</span></p>
                 </div>

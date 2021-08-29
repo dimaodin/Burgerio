@@ -46,7 +46,7 @@
 .MenuItem-itemName {
     font-family: var(--main-font);
     font-size: 1.7rem;
-    font-weight: 300;
+    font-weight: 500;
     display: flex;
     align-items: center;
     letter-spacing: 1px;
@@ -54,7 +54,7 @@
 
 .MenuItem-itemDesc {
     font-family: var(--serif-font);
-    font-weight: 700;
+    font-weight: 400;
     margin-top: .15rem;
     font-size: 1rem;
     max-width: 85%;
@@ -62,6 +62,7 @@
 }
 
 .MenuItem-itemPrice {
+    font-family: var(--serif-font);
     background: rgba(206, 35, 64, 0.774);
     box-shadow: 0 4px 4px 0 rgba(255, 59, 59, 0.37);
     backdrop-filter: blur( 2.0px );

@@ -69,11 +69,11 @@ function MenuItemModal(props){
                 { genImgs() } 
                 <i 
                     onClick={changeImg.bind(null, currentImgIdx - 1)} 
-                    className={`${currentImgIdx === 0 ? 'hide' : null} MenuItemModal-imgBoxArrow fas fa-chevron-left`}>
+                    className={`${currentImgIdx === 0 ? 'hide' : null} MenuItemModal-imgBoxArrow fas fa-chevron-right`}>
                 </i>
                 <i 
                     onClick={changeImg.bind(null, currentImgIdx + 1)} 
-                    className={`${currentImgIdx === item.imgs.length - 1 ? 'hide' : null} MenuItemModal-imgBoxArrow fas fa-chevron-right`}>
+                    className={`${currentImgIdx === item.imgs.length - 1 ? 'hide' : null} MenuItemModal-imgBoxArrow fas fa-chevron-left`}>
                 </i>
             </div>
             <div className="MenuItemModal-imgCounter">

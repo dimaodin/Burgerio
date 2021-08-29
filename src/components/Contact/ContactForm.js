@@ -225,7 +225,7 @@ export default function ContactForm(props) {
 					options={[
 						'הצעות',
 						'ביקורת',
-						'דאגה',
+						'רעיון',
 						'שיווק',
 						'אירוע פרטי',
 						'משרות',
