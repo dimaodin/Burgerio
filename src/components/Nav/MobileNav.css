@@ -53,29 +53,34 @@
     height: 5px;
     border-radius: 5rem;
     margin: .45rem 0rem;
-    transform-origin: center;
-    transition: transform 300ms linear;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
 }
 
 .MobileNav-gripLine:first-of-type {
     width: 60%;
+
 }
 
 .MobileNav-gripLine:nth-of-type(2) {
     width: 80%;
+    transform-origin: 0% 100%;
 }
 
 .MobileNav-gripLine:first-of-type.open {
     width: 100%;
-    transform: rotate(50deg) translate(.225rem, .5rem) scaleX(.7)
+    transform: rotate(50deg) translate(.5rem)
 }
 
 .MobileNav-gripLine:nth-of-type(2).open {
     width: 100%;
-    transform: rotate(-50deg) translateY(-.35rem) scaleX(.7)
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
 }
 .MobileNav-gripLine:nth-of-type(3).open {
-    transform: rotate(-50deg) translateX(-5rem)
+    transform: rotate(-45deg) translate(0, -1px);
 }
 
 .MobileNav-address {

@@ -96,7 +96,7 @@
     right: 1rem;
     width: 2rem;
     height: 2rem;
-    background-color: #2f2f2f5e;
+    background-color: var(--highlight-color-fade);
     z-index: 20;
     cursor: pointer;
     transform: translateY(200%);
@@ -109,7 +109,7 @@
 }
 
 .Menu-scrollTop:hover {
-    background-color: #2f2f2fa1;
+    background-color: var(--secondary-color-fade-less);
 }
 
 .Menu-scrollTop i {

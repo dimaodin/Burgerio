@@ -1,34 +1,34 @@
 import React, { useRef } from 'react';
 import './Order.css';
 import PropTypes from 'prop-types';
-import ubereats_img from '../../imgs/service_badges/ubereats_badge.png'
-import grubhub_img from '../../imgs/service_badges/grubhub_badge.png'
-import postmates_img from '../../imgs/service_badges/postmates_badge.png'
-import fastordernow_img from '../../imgs/service_badges/fastordernow_badge-black.png'
+import mishloha_img from '../../imgs/service_badges/mishloha_badge.png'
+import gett_img from '../../imgs/service_badges/gett_delivery_badge.png'
+import tenbis_img from '../../imgs/service_badges/tenbis_badge.png'
+import wolt_img from '../../imgs/service_badges/wolt_badge.png'
 
 Order.propTypes = {
     atTop: PropTypes.bool.isRequired,
     isMobile: PropTypes.bool.isRequired
 }
 
-const UBEREATS = { 
-    link: 'https://www.ubereats.com/',
-    img: ubereats_img
+const MISHLOHA = { 
+    link: 'https://www.mishloha.co.il/',
+    img: mishloha_img
 };
 
-const GRUBHUB = { 
-    link: 'https://www.grubhub.com/',
-    img: grubhub_img
+const GETT = { 
+    link: 'https://gett.com/il/delivery/',
+    img: gett_img
 };
 
-const POSTMATES = { 
-    link: 'https://postmates.com/',
-    img: postmates_img
+const TENBIS = { 
+    link: 'https://www.10bis.co.il/',
+    img: tenbis_img
 };
 
-const FASTORDERNOW = { 
-    link: 'https://www.fastordernow.com/',
-    img: fastordernow_img
+const WOLT = { 
+    link: 'https://wolt.com/',
+    img: wolt_img
 };
 
 export default function Order(props) {
@@ -46,7 +46,7 @@ export default function Order(props) {
         window.scrollTo(scrollOptions)
     }
 
-    const platformList = [FASTORDERNOW, UBEREATS, GRUBHUB, POSTMATES].map(platform => (
+    const platformList = [WOLT, MISHLOHA, GETT, TENBIS].map(platform => (
         <a href={ platform.link } key={ platform.link } target='_blank' rel='noopener noreferrer' className='Order-platform'>
             <img src={ platform.img } alt="Burgerio Restaurant Delivery"/>
         </a>

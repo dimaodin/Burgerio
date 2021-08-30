@@ -30,7 +30,7 @@ export default function FullNav(props){
                     <img src={whiteLogo} alt=""/>
                     <div className='FullNav-brand'>
                         <h1>בורגריו</h1>
-                        <p>ברזיל זה כאן. <span role="img" aria-label="Brazil's Flag">🇧🇷</span></p>
+                        <p>בשר ממבט ראשון <span role="img" aria-label="Meat">🥩</span></p>
                     </div>
                 </Link>
                 <div className="FullNav-linkList">

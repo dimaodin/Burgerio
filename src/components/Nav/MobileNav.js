@@ -45,7 +45,7 @@ export default function MobileNav(props){
                 <li onClick={() => setHamburgerMenuOpen(false)} className="MobileNav-brand">
                     <Link to="/">
                         <h1>בורגריו</h1>
-                        <p>ברזיל זה כאן. <span role="img" aria-label="Brazil's Flag">🇧🇷</span></p>
+                        <p>בשר ממבט ראשון <span role="img" aria-label="Meat">🥩</span></p>
                     </Link>
                 </li>
                 <div onClick={() => setHamburgerMenuOpen(hamburgerMenuOpen => !hamburgerMenuOpen)} className="MobileNav-toggleBtn">
